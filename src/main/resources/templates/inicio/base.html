@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  class="app-fluid">
+    <head>
+        <title>Sistemas</title>
+        <div th:substituteby="inicio/includes :: styles"></div>
+    </head>
+
+    <body>
+        <section class="vbox">
+            <!--<section  layout:fragment="HEADER"> </section>-->
+            <header layout:fragment="HEADER" class="bg-white-only navbar-fixed-top header header-md navbar navbar-fixed-top-xs box-shadow">
+                
+            </header>
+            
+            <section  layout:fragment="BODY"> </section>
+        </section>
+
+        <div th:substituteby="inicio/includes :: javascript"/>
+        <section layout:fragment="js"> JAVASCRIPTS </section>
+    </body>
+</html>

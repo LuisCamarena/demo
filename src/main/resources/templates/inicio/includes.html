@@ -1,0 +1,50 @@
+<base th:fragment="styles">
+
+<meta charset="utf-8"/>
+<!--<meta name="google" value="notranslate"/>-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="stylesheet" type="text/css" th:href="@{/zglobal/bootstrap/css/bootstrap.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/zglobal/scale/css/animate.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/zglobal/scale/css/font-awesome.min.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/zglobal/scale/css/app.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/zglobal/scale/css/font-awesome.min.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/zglobal/jquery.dynatable/jquery.dynatable.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/zglobal/sweet-alert/sweetalert2.min.css}" />
+
+
+</base>
+
+
+
+
+<div th:fragment="javascript">
+
+    <script type="text/javascript" th:src="@{/zglobal/scale/js/jquery.min.js}" ></script>
+    <script type="text/javascript" th:src="@{/zglobal/bootstrap/js/bootstrap.js}" ></script>
+    <script type="text/javascript" th:src="@{/zglobal/scale/js/app.js}" ></script>
+    <script type="text/javascript" th:src="@{/zglobal/scale/js/jquery.slimscroll.min.js}" ></script>
+    <script type="text/javascript" th:src="@{/zglobal/scale/js/app.plugin.js}" ></script>
+    <script type="text/javascript" th:src="@{/zglobal/scale/js/fontawesome.min.js}" ></script>
+
+    <script type="text/javascript" th:src="@{/zglobal/axios/axios.min.js}" ></script>
+    <script type="text/javascript" th:src="@{/zglobal/vue/vue.min.js}" ></script>
+    
+    <script type="text/javascript" th:src="@{/zglobal/parsleyjs/parsley.js}" charset="utf-8"/>
+    <script type="text/javascript" th:src="@{/zglobal/sweet-alert/sweetalert2.min.js}" charset="utf-8"/>
+    
+    
+    <script type="text/javascript" th:src="@{/zglobal/jquery.dynatable/jquery.dynatable.js}"></script>
+    <script type="text/javascript" th:src="@{/zglobal/vuejs-uib-pagination/vuejs-uib-pagination.js}"></script>
+    <script type="text/javascript" th:src="@{/zglobal/modulos/vue-modal.js}"/>
+    <script type="text/javascript" th:src="@{/zglobal/global.js}"></script>
+    <!--<script type="text/javascript" th:src="@{/zglobal/jquery.dynatable/dynatable.setup.js}" charset="utf-8"/>-->
+    
+   
+
+
+    <script  th:inline="javascript" >
+        /*<![CDATA[*/
+        var contextPath = /*[[@{/}]]*/ '/app';
+        /*]]>*/
+    </script>
+</div>

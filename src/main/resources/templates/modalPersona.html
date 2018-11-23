@@ -1,0 +1,27 @@
+<modal-vik ref="modalAddPersona"
+           v-bind="modalAddPersona"
+           v-bind:okaction="save" >
+
+    <div slot="body">
+        <form data-parsley-validate="true" id="formConfig"  method="post">
+                <div class=" row">
+                    <div class="col-md-12">
+                        <label>Paterno</label>
+                        <input class="form-control" v-model="persona.paterno" required="true"></input>
+                    </div>
+                </div>
+                <div class=" row">
+                    <div class="col-md-12">
+                        <label>Materno</label>
+                        <input class="form-control" v-model="persona.materno"></input>
+                    </div>
+                </div>
+                <div class=" row">
+                    <div class="col-md-12">
+                        <label>Nombres</label>
+                        <input class="form-control" v-model="persona.nombres"></input>
+                    </div>
+                </div>
+        </form>
+    </div>
+</modal-vik>
